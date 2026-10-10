@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="logo / figma">
+<g id="Keylines">
+<path id="bg" d="M14 0V14H0V0H14Z" fill="white" fill-opacity="0.01"/>
+</g>
+<path id="vector" fill-rule="evenodd" clip-rule="evenodd" d="M7 6.99991C7 5.92602 7.87056 5.05546 8.94444 5.05546C10.0183 5.05546 10.8889 5.92602 10.8889 6.99991C10.8889 8.07379 10.0183 8.94435 8.94444 8.94435C7.87056 8.94435 7 8.07379 7 6.99991Z" fill="#1ABCFE"/>
+<path id="vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M3.11106 10.889C3.11106 9.8151 3.98162 8.94454 5.05551 8.94454H6.99995V10.889C6.99995 11.9629 6.1294 12.8334 5.05551 12.8334C3.98162 12.8334 3.11106 11.9629 3.11106 10.889Z" fill="#0ACF83"/>
+<path id="vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M7 1.16667V5.05556H8.94444C10.0183 5.05556 10.8889 4.185 10.8889 3.11111C10.8889 2.03722 10.0183 1.16667 8.94444 1.16667H7Z" fill="#FF7262"/>
+<path id="vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M3.11106 3.11111C3.11106 4.185 3.98162 5.05556 5.05551 5.05556H6.99995V1.16667H5.05551C3.98162 1.16667 3.11106 2.03722 3.11106 3.11111Z" fill="#F24E1E"/>
+<path id="vector_5" fill-rule="evenodd" clip-rule="evenodd" d="M3.11106 6.99991C3.11106 8.07379 3.98162 8.94435 5.05551 8.94435H6.99995V5.05546H5.05551C3.98162 5.05546 3.11106 5.92602 3.11106 6.99991Z" fill="#A259FF"/>
+</g>
+</svg>

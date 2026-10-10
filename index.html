@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcus Ougasse — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=91" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <a class="site-name" href="index.html">Marcus Ougasse</a>
+
+          <div class="sidebar-groups">
+            <div class="nav-group">
+              <p class="nav-label">Work</p>
+              <ul class="nav-list">
+                <li><a class="nav-item" href="bitvali.html">Bitvali</a></li>
+                <li><a class="nav-item" href="orion.html">Orion</a></li>
+                <li><a class="nav-item" href="curve.html">Curve (Redesign)</a></li>
+              </ul>
+            </div>
+            <div class="nav-group">
+              <p class="nav-label">Contact</p>
+              <ul class="nav-list">
+                <li>
+                  <a class="nav-item nav-item-split" href="mailto:marcusougasse972@gmail.com">
+                    <span class="nav-item-label">
+                      <span class="at-mark" aria-hidden="true">@</span>
+                      Email
+                    </span>
+                    <img src="assets/icons/external.svg" width="14" height="14" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a class="nav-item nav-item-split" href="https://www.linkedin.com/in/marcus-ougasse-a64069293/" target="_blank" rel="noopener noreferrer">
+                    <span class="nav-item-label">
+                      <img src="assets/icons/linkedin.svg" width="14" height="14" alt="" />
+                      Linkedin
+                    </span>
+                    <img src="assets/icons/external.svg" width="14" height="14" alt="" />
+                  </a>
+                </li>
+                
+                <li>
+                  <a class="nav-item nav-item-split" href="https://www.figma.com/@marcusougasse" target="_blank" rel="noopener noreferrer">
+                    <span class="nav-item-label">
+                      <img src="assets/icons/figma.svg" width="14" height="14" alt="" />
+                      Figma
+                    </span>
+                    <img src="assets/icons/external.svg" width="14" height="14" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="sidebar-copy">© Marcus Ougasse, 2026</p>
+      </aside>
+
+      <div class="main-col">
+        <header class="topbar">
+          <span class="topbar-btn">
+            <img src="assets/icons/home.svg?v=2" width="14" height="14" alt="" />
+            Home
+          </span>
+          <span class="topbar-btn">
+            <img src="assets/icons/link.svg?v=2" width="14" height="14" alt="" />
+            Copy link
+          </span>
+        </header>
+
+        <main class="content">
+          <section class="intro">
+            <h1 class="intro-title">Bachelor Web et UX Design chez iSCOD (1re année)</h1>
+            <p class="intro-description">Je conçois des interfaces web et mobiles aussi bien complexes qu'épurées, alliant rigueur technique et clarté visuelle.</p>
+            <div class="intro-meta">
+              <p class="meta-item">
+                <img src="assets/icons/pin.svg" width="14" height="14" alt="" />
+                Paris
+              </p>
+              <p class="meta-item">
+                <img src="assets/icons/clock.svg" width="14" height="14" alt="" />
+                <time id="paris-time">--:--</time>
+              </p>
+            </div>
+          </section>
+
+          <div class="work-list">
+            <a class="work-block" href="bitvali.html">
+              <div class="work-info">
+                <div class="work-heading">
+                  <h2 class="work-name">Bitvali</h2>
+                  <p class="work-role">UX/UI Designer</p>
+                </div>
+                <p class="work-description">Bitvali transforme les streams en marchés prédictifs interactifs, où les créateurs monétisent leur audience en temps réel. </p>
+              </div>
+              <div class="work-tile">
+                <img class="project-hero-cover" src="assets/covers/cover-bitvali.png" alt="" />
+              </div>
+            </a>
+
+            <a class="work-block" href="orion.html">
+              <div class="work-info">
+                <div class="work-heading">
+                  <h2 class="work-name">Orion</h2>
+                  <p class="work-role">UX/UI Designer</p>
+                </div>
+                <p class="work-description">Orion est une plateforme fictive d'échange décentralisée (DEX) et une blockchain de couche 1 (Layer 1) haute performance, conçue spécifiquement pour le trading de contrats à terme perpétuels et d'actifs au comptant (spot). </p>
+              </div>
+              <div class="work-tile">
+                <img class="project-hero-cover" src="assets/covers/cover-orion.png" alt="" />
+              </div>
+            </a>
+
+            <a class="work-block" href="curve.html">
+              <div class="work-info">
+                <div class="work-heading">
+                  <h2 class="work-name">Curve (Redesign)</h2>
+                  <p class="work-role">UI/UX Designer</p>
+                </div>
+                <p class="work-description">Redesign conceptuel du Swap de Curve</p>
+              </div>
+              <div class="work-tile">
+                <img class="project-hero-cover" src="assets/covers/curve-cover.png" alt="" />
+              </div>
+            </a>
+
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const parisTime = document.getElementById("paris-time");
+      const parisClock = new Intl.DateTimeFormat("fr-FR", {
+        timeZone: "Europe/Paris",
+        hour: "2-digit",
+        minute: "2-digit",
+      });
+
+      const updateParisTime = () => {
+        parisTime.textContent = parisClock.format(new Date());
+      };
+
+      updateParisTime();
+      setInterval(updateParisTime, 1000);
+    </script>
+  </body>
+</html>
+<!-- python3 -m http.server 4173 -->
