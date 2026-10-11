@@ -591,21 +591,6 @@ a.topbar-btn {
   background: var(--tile);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .project-shot {
-    opacity: 0;
-    transform: translateY(28px);
-    transition:
-      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
-      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  }
-
-  .project-shot.is-inview {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .project-shot > img {
   display: block;
   max-width: 100%;

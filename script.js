@@ -47,22 +47,3 @@ if (sidebar && topbar) {
     if (event.key === "Escape") setOpen(false);
   });
 }
-
-const shots = document.querySelectorAll(".project-shot");
-
-if (!shots.length || !("IntersectionObserver" in window)) {
-  shots.forEach((shot) => shot.classList.add("is-inview"));
-} else {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("is-inview");
-        observer.unobserve(entry.target);
-      });
-    },
-    { threshold: 0.16, rootMargin: "0px 0px -6% 0px" }
-  );
-
-  shots.forEach((shot) => observer.observe(shot));
-}
