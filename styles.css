@@ -800,6 +800,18 @@ a.topbar-btn {
     overflow: hidden;
   }
 
+  .intro-meta {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .meta-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
+  }
+
   .work-description,
   .project-lead {
     width: 100%;
