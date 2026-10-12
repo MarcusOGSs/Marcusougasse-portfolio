@@ -342,15 +342,6 @@ a.topbar-btn {
   line-height: 25px;
 }
 
-.work-description {
-  margin: 0;
-  width: 70%;
-  color: #e5e5e5;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-}
-
 .work-tile {
   position: relative;
   display: flex;
@@ -797,7 +788,6 @@ a.topbar-btn {
     text-align: left;
   }
 
-  .work-description,
   .project-lead {
     width: 100%;
   }
