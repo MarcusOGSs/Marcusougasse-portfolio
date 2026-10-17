@@ -47,3 +47,47 @@ if (sidebar && topbar) {
     if (event.key === "Escape") setOpen(false);
   });
 }
+
+const copyLink = document.querySelector(".copy-link");
+
+if (copyLink) {
+  const label = copyLink.querySelector("span");
+  let timer = 0;
+
+  const copyUrl = async (url) => {
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(url);
+        return true;
+      }
+    } catch {
+      // Le presse-papiers peut être refusé hors contexte sécurisé.
+    }
+
+    try {
+      const field = document.createElement("textarea");
+      field.value = url;
+      field.setAttribute("readonly", "");
+      field.style.position = "fixed";
+      field.style.left = "-9999px";
+      document.body.appendChild(field);
+      field.select();
+      const copied = document.execCommand("copy");
+      field.remove();
+      return copied;
+    } catch {
+      return false;
+    }
+  };
+
+  copyLink.addEventListener("click", async () => {
+    const copied = await copyUrl(window.location.href);
+    if (!copied || !label) return;
+
+    label.textContent = "Copied";
+    window.clearTimeout(timer);
+    timer = window.setTimeout(() => {
+      label.textContent = "Copy link";
+    }, 1500);
+  });
+}

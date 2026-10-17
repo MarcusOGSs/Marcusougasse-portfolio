@@ -244,9 +244,14 @@ body {
   cursor: default;
 }
 
-a.topbar-btn {
+a.topbar-btn,
+button.topbar-btn {
+  border: 0;
+  background: none;
   color: var(--muted);
+  font: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .topbar-btn:hover {
